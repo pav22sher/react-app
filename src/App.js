@@ -1,9 +1,14 @@
-import Counter from "./components/Counter";
+import './App.css';
+import Header from "./components/header/Header";
+import Form from "./components/form/Form";
+import Table from "./components/table/Table";
 
 function App() {
     return (
         <div className="App">
-            <Counter/>
+            <Header/>
+            <Form />
+            <Table />
         </div>
     );
 }
