@@ -1,0 +1,1 @@
+{"version":3,"file":"static/css/main.57275c46.css","mappings":"AAAA,MAEI,mCAAoC,CACpC,gCAAiC,CAFjC,iBAGJ","sources":["App.css"],"sourcesContent":[".body {\r\n    text-align: center;\r\n    background: var(--tg-theme-bg-color);\r\n    color: var(--tg-theme-text-color);\r\n}"],"names":[],"sourceRoot":""}
