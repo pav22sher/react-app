@@ -98,27 +98,13 @@ function App() {
                 <button className="btn btn-success" onClick={onSendData}>Сохранить</button>
             </form>
             <h3>Последнии 5 операций:</h3>
-            <table className="table">
-                <thead>
-                <tr>
-                    <th scope="col">ID</th>
-                    <th scope="col">Когда</th>
-                    <th scope="col">Сумма</th>
-                    <th scope="col">Категория</th>
-                </tr>
-                </thead>
-                <tbody>
-                {operations.map(
-                    (operation, i) =>
-                        <tr key={i}>
-                            <td>{operation.id}</td>
-                            <td>{operation.createdAt}</td>
-                            <td>{operation.sum}</td>
-                            <td>{operation.category}</td>
-                        </tr>
+            <ul>
+                {operations.map((operation, i) =>
+                        <li key={i}>
+                            {operation.createdAt} {operation.sum} {operation.category}
+                        </li>
                 )}
-                </tbody>
-            </table>
+            </ul>
         </div>
     );
 }
