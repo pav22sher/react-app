@@ -2,7 +2,7 @@ import './App.css';
 import React, {useEffect, useState} from "react";
 
 function App() {
-    let baseUrl = "http://localhost:8080";
+    let baseUrl = "https://railway-telegram-production.up.railway.app/api/operation-history";
     let tg = window.Telegram.WebApp;
     let user = tg.initDataUnsafe?.user;
     let userId = user?.id;
